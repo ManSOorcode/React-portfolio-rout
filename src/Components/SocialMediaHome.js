@@ -7,13 +7,11 @@ import { SiGmail } from "react-icons/si";
 const SocialMediaHome = () => {
   // const media = [{link:}]
   return (
-    <div className="absolute w-20 h-60 bg-gray top-[40%] left-0">
+    <div className="absolute left-0 w-20 h-60 bg-gray">
       <ul className="flex flex-col w-full h-full justify-evenly ">
-        <li
-          className="flex items-center justify-center border-4 border-b-0 aspect-square "
-        >
+        <li className="flex items-center justify-center border-4 border-b-0 aspect-square ">
           <Link className="my-auto" to={"#"}>
-            {<FaLinkedinIn className="w-8 h-8" />}
+            {<FaLinkedinIn className="w-8 h-8 text-yellow-50" />}
           </Link>
           {/* {<FaLinkedinIn />} */}
         </li>
@@ -22,12 +20,12 @@ const SocialMediaHome = () => {
             className="my-auto"
             to={"home/https://github.com/ManSOorcode?tab=repositories"}
           >
-            {<SiGithub className="w-8 h-8 " />}
+            {<SiGithub className="w-8 h-8 text-yellow-50" />}
           </Link>
         </li>
         <li className="flex items-center justify-center border-4 aspect-square">
           <Link className="my-auto" to={"#"}>
-            {<SiGmail className="w-8 h-8 " />}
+            {<SiGmail className="w-8 h-8 text-yellow-50" />}
           </Link>
         </li>
       </ul>
